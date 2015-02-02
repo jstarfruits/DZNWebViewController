@@ -853,7 +853,8 @@ static char DZNWebViewControllerKVOContext = 0;
     _forwardLongPress = nil;
     
     _webView.navDelegate = nil;
-    _webView.UIDelegate = nil;
+	_webView.UIDelegate = nil;
+	_webView.scrollView.delegate = nil;
     _webView = nil;
     _URL = nil;
 }
